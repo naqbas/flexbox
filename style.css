@@ -1,0 +1,90 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.parent {
+    display: flex;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+.parent div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: wheat;
+}
+.parent2 {
+    flex-direction: column;
+}
+.parent3 {
+    justify-content: flex-start;
+}
+.parent4 {
+    justify-content: flex-end;
+}
+.parent5 {
+    justify-content: center;
+}
+.parent6 {
+    justify-content: space-between;
+}
+.parent7 {
+    justify-content: space-around;
+}
+.parent8 {
+    justify-content: space-evenly;
+}
+.parent9 {
+    height: 250px;
+    align-items: flex-start;
+}
+.parent10 {
+    height: 250px;
+    align-items: flex-end;
+}
+.parent11 {
+    height: 250px;
+    align-items: center;
+}
+.parent12 {
+    height: 250px;
+    align-items: stretch;
+}
+.parent12 div {
+    height: auto;
+}
+.parent13 div:nth-child(1) {
+    order: 4;
+}
+.parent13 div:nth-child(2) {
+    order: 3;
+}
+.parent13 div:nth-child(3) {
+    order: 2;
+}
+.parent13 div:nth-child(4) {
+    order: 1;
+}
+.parent15 {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.parent15 div {
+    width: 40%;
+}
+.parent16 div {
+    flex-basis: 20%;
+}
+.parent17 div {
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+.parent18 div {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}

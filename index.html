@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <br>
+    <h2>Направление(главная ось) > flex-direction</h2>
+    <h3>flex-direction: row;</h3>
+    <p>Главная ось направлена слева направо</p>
+    <div class="parent1 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>flex-direction: column;</h3>
+    <p>Главная ось направлена сверху вниз</p>
+    <div class="parent2 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <br>    
+    <h2>Выравнивание(главная ось) > justify-content</h2>
+    <h3>justify-content: flex-start;</h3>
+    <p>Блоки сдвинуты в начало flex направления</p>
+    <div class="parent3 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>justify-content: flex-end;</h3>
+    <p>Блоки сдвинуты ближе к концу flex направления</p>
+    <div class="parent4 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>justify-content: center;</h3>
+    <p>Блоки центрированы вдоль линии</p>
+    <div class="parent5 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>justify-content: space-between;</h3>
+    <p>Блоки равномерно распределены по линии; Первый и последний блок прижимаются к соответствующим краям контейнера</p>
+    <div class="parent6 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>justify-content: space-around;</h3>
+    <p>Блоки равномерно распределены по линии с одинаковым пространством вокруг них; Пустое пространство перед первым и после последнего блоков равно половине пространства между двумя соседними блоками</p>
+    <div class="parent7 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>justify-content: space-evenly;</h3>
+    <p>Блоки распределяются таким образом, чтобы расстояние между любыми двумя блоками (и расстояние до краев) было одинаковым</p>
+    <div class="parent8 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <br>
+    <h2>Выравнивание(поперечная ось) > align-items</h2>
+    <h3>align-items: flex-start;</h3>
+    <p>Блоки размещаются в начале поперечной оси</p>
+    <div class="parent9 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>align-items: flex-end;</h3>
+    <p>Блоки располагаются в конце поперечной оси</p>
+    <div class="parent10 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>align-items: center;</h3>
+    <p>Блоки центрированы по поперечной оси</p>
+    <div class="parent11 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>align-items: stretch;</h3>
+    <p>Растягивать блоки, чтобы заполнить контейнер</p>
+    <div class="parent12 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <br>
+    <h2>Порядок > order</h2>
+    <h3>order: 4;(для Блок 1) order: 3;(для Блок 2) order: 2;(для Блок 3) order: 1;(для Блок 4)</h3>
+    <p>Порядок блоков</p>
+    <div class="parent13 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <br>
+    <h2>При нехватки длины > flex-wrap</h2>
+    <h3>flex-wrap: no-wrap;</h3>
+    <p>По умолчанию блоки не будут перенесены</p>
+    <div class="parent14 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>flex-wrap: wrap;</h3>
+    <p>Блоки будут перенесены на несколько строк сверху вниз если не будут влизать по ширине.</p>
+    <div class="parent15 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <br>
+    <h2>Растягивание и сокращение > flex-basis, flex-grow, flex-shrink</h2>
+    <h3>flex-basis: 20%;</h3>
+    <p>Размер блока по умолчанию перед распределением оставшегося пространства</p>
+    <div class="parent16 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>flex-basis: 20%; and flex-grow: 1;</h3>
+    <p>Растягивать ширину блоков в случае flex-grow: 1;</p>
+    <div class="parent17 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <h3>flex-basis: 200px; and flex-shrink: 0;</h3>
+    <p>Запрещение сокращать блоки в случае flex-shrink: 0;</p>
+    <div class="parent18 parent">
+        <div>Блок 1</div>
+        <div>Блок 2</div>
+        <div>Блок 3</div>
+        <div>Блок 4</div>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
